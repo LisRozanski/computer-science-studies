@@ -5,7 +5,7 @@ public class Uni3Exe11 {
     
     System.out.println("Informe o valor da temperatura (°C):");
     Scanner teclado = new Scanner(System.in);
-    int celsius  = teclado.nextInt();
+    double celsius  = teclado.nextInt();
 
     double fahrenheit = (celsius * 9/5) + 32;
 
