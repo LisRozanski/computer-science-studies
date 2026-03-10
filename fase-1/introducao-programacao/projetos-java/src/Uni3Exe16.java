@@ -15,8 +15,14 @@ public class Uni3Exe16 {
     int valorTroco = valorPago - valorCompra;
 
     int notas100 = valorTroco / 100;
-    int notas10 = (valorTroco % 100) / 10;
-    int notas1 = valorTroco % 10;
+    valorTroco = valorTroco - (notas100 * 100);
+
+    int notas10 = valorTroco / 10;
+    valorTroco = valorTroco - (notas10 * 10);
+
+    int notas1 = valorTroco / 1;
+    valorTroco = valorTroco - (notas1 * 1);
+
     int totalNotas = notas100 + notas10 + notas1;
 
     System.out.println("O número mínimo de notas de troco é: " + totalNotas);
